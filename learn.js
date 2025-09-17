@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 卡片类型和对应的元素
   const cardTypes = {
-    late: { count: 5, element: lateCardCountEl },
+    late: { count: 8, element: lateCardCountEl },
     asset: {
       count: 1,
       element: document.querySelector(".information p:nth-child(2) span"),
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       element: document.querySelector(".information p:nth-child(3) span"),
     },
     supplement: {
-      count: 3,
+      count: 0,
       element: document.querySelector(".information p:nth-child(4) span"),
     },
     treat: {
@@ -576,4 +576,5 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cardTypes.supplement.count <= 0) signNotYetBtn.disabled = true;
   }
 });
+
 
