@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .sort((a, b) => b - a); // 从最近到最远排序
 
-    let currentStreak = 0;
+    let currentStreak = 25;
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
@@ -576,3 +576,4 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cardTypes.supplement.count <= 0) signNotYetBtn.disabled = true;
   }
 });
+
